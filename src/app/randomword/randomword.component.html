@@ -1,0 +1,20 @@
+<div id="show-word" class="wordbank-box" fxLayout="row" fxLayoutAlign="space-around center" >
+  <div>
+    <mat-card>
+      <mat-card-header>
+        <mat-card-title>Word Picker</mat-card-title>
+        <mat-card-subtitle>Click the button to get a word</mat-card-subtitle>
+      </mat-card-header>
+      <img style="background: #7f187f" mat-card-image src="{{this.wayfairLogo}}">
+      <mat-card-content>
+        <div class="display-word">
+          <h2>{{this.displayWord | titlecase}}</h2>
+        </div>
+      </mat-card-content>
+      <mat-card-actions>
+        <button mat-stroked-button color="primary" (click)="get_image($event)">Get Image</button>
+        <button mat-stroked-button color="primary" (click)="get_word($event)">Get Word</button>
+      </mat-card-actions>
+    </mat-card>
+  </div>
+</div>
